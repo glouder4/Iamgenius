@@ -1,0 +1,15 @@
+@media (max-width: 575px){
+	header>.col-12>.col-12{
+		text-align: center;
+		margin-top:15px;
+	}
+	#element_1{
+		height:360px;
+	}
+	#element_1>div{
+		margin-top: 50px;
+	}
+	#element_2{
+	height: 760px;
+}
+}
