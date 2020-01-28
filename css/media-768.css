@@ -1,0 +1,9 @@
+@media (max-width: 768px){
+	#element_2>.bg-light>div>div>.col-lg-4>img,#element_2>.bg-light>div>.col-lg-4>img{
+		float: left;
+		margin-left:40%;
+	}
+	#element_1>.fadeInLeft{
+		margin-top:25%;
+	}
+}

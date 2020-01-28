@@ -6,6 +6,9 @@ body{
 	font-family: Montserrat;
 }
 header{
+	top: 0; left: 0;
+	width: 100%;
+	transition: all .3s ease;
 	padding: 15px;
 	background-color: #1E90FF;
 	color:#fff;
@@ -13,44 +16,124 @@ header{
 header a{
 	color:#fff;
 }
+#header.out {
+	transform: translateY(-100%);
+}
 #logo>div{
 	width:165px;
-	height:130px;
+	height:90px;
+}
+#logo>div>a>img{
+	width:120px;
+	height:90px;
 }
 
 #element_1{
-	background-image: url(../images/kids.jpg);
+	background:linear-gradient( rgba(175, 175, 175, 0.6), rgba(0, 0, 0, 0.52) ), url(../images/kids.jpg);
 	background-size: cover;
-	height: 560px;
+	height: 100vh;
 	color:#fff;
 	font-size: 29px;
+	margin-top:90px;
+	border-bottom-left-radius: 3%; 
+	border-bottom-right-radius: 3%;
 }
 #element_1>div{
-	margin-top: 150px;
+	margin-top: 5%;
 	float:right;
+	-webkit-filter: brightness(100%);
+    filter: brightness(100%);
+}
+#element_1>.fadeInLeft{
+	margin-top:30%;
 }
 #element_1>div>p{
 	font-size: 20px;
 }
 #element_2{
-	height: 560px;
-	padding: 15px;
+	height: 100%;
+	padding-top: 35px;
 }
 #element_2>div{
 	text-align: center;
 }
-#element_2>div>h2{
+#element_2>div>div>h3{
 	font-weight: bold;
+	color:#26264b;
+	text-transform: uppercase;
+	text-align: center;
+}
+#element_2>div>div>p{
+	color: #8b8b9a;
 }
 #element_2>div>div{
 	text-align: left;
 }
+#element_2>.fadeInUp{
+	padding-bottom: 35px;
+}
+#element_2>.bg-light{
+	background-image: url('../images/light_bg.png');
+	padding-top:25px;
+	padding-bottom: 25px;
+	border-top-left-radius: 3%; 
+	border-top-right-radius: 3%;
+}
+#element_2>.bg-light>div>div,#element_2>.bg-light>.col-lg-12{
+	margin-top:35px;
+}
+#element_2>.bg-light>div>div>.col-lg-8{
+	padding-left: 25px;
+}
+#element_2>.bg-light>div>div>.col-lg-4>img,#element_2>.bg-light>div>.col-lg-4>img{
+	float: right;
+	width:120px;
+	height: 120px;
+}
+#element_2>.bg-light>div>div>.col-lg-8>p{
+	font-size: 90%;
+}
+#carousel_1>.carousel-inner{
+	border-radius: 5%;
+}
+#carousel_1>.carousel-inner>.carousel-item{
+	height:275px;
+}
+#carousel_1>.carousel-inner>.carousel-item>img{
+	width:100%;
+	height:100%;
+}
 #element_3{
 	text-align: center;
 }
-#element_3>div>h3{
+#element_3>.container>div>.col-xl-3{
+	border: 1px solid rgb(0, 123, 255);
+	border-radius: 30px;
+}
+#element_3>.container>div>.col-xl-3{
+	font-size: 120%;
+}
+#element_3>.container>div>.active{
+	background-color: rgb(0, 123, 255);
+}
+#element_3>.container>div>.active>h6{
+	color:#fff;
+}
+#element_4{
+	text-align: center;
+	background-image: url('../images/light_bg.png');
+	padding-bottom: 35px;
+}
+#element_4>div>h3{
 	text-align: left;
 }
-#element_3>div>.ymaps-2-1-75-map{
+#element_4>div>ymaps{
 	height:320px;
+}
+footer{
+	height: 175px;
+	background-color: #1E90FF;
+	color:#fff;
+	border-top-left-radius: 3%; 
+	border-top-right-radius: 3%;
 }

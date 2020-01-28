@@ -5,11 +5,13 @@
 	}
 	#element_1{
 		height:360px;
+		margin-top: 0;
 	}
 	#element_1>div{
 		margin-top: 50px;
 	}
-	#element_2{
-	height: 760px;
-}
+	#element_2>.bg-light>div>div>.col-lg-4>img,#element_2>.bg-light>div>.col-lg-4>img{
+		float: left;
+		margin-left:25%;
+	}
 }
