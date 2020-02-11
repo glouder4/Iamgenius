@@ -16,11 +16,17 @@ header{
 header a{
 	color:#fff;
 }
+header>div>div>h1{
+	font-size: 120%;
+}
+header>div>div{
+	font-size: 90%;
+}
 #header.out {
 	transform: translateY(-100%);
 }
 #logo>div{
-	width:165px;
+	width:120px;
 	height:90px;
 }
 #logo>div>a>img{
@@ -35,8 +41,8 @@ header a{
 	color:#fff;
 	font-size: 29px;
 	margin-top:90px;
-	border-bottom-left-radius: 3%; 
-	border-bottom-right-radius: 3%;
+	border-bottom-left-radius: 30px; 
+	border-bottom-right-radius: 30px;
 }
 #element_1>div{
 	margin-top: 5%;
@@ -45,22 +51,19 @@ header a{
     filter: brightness(100%);
 }
 #element_1>.fadeInLeft{
-	margin-top:30%;
+	margin-top:20%;
 }
 #element_1>div>p{
-	font-size: 20px;
+	font-size: 1rem;
+}
+#element_2>div>div>p>strong{
+	color:black;
 }
 #element_2{
 	height: 100%;
 	padding-top: 35px;
 }
 #element_2>div{
-	text-align: center;
-}
-#element_2>div>div>h3{
-	font-weight: bold;
-	color:#26264b;
-	text-transform: uppercase;
 	text-align: center;
 }
 #element_2>div>div>p{
@@ -75,18 +78,15 @@ header a{
 #element_2>.bg-light{
 	background-image: url('../images/light_bg.png');
 	padding-top:25px;
-	padding-bottom: 25px;
-	border-top-left-radius: 3%; 
-	border-top-right-radius: 3%;
+	border-radius: 30px 30px 30px 30px;
 }
 #element_2>.bg-light>div>div,#element_2>.bg-light>.col-lg-12{
-	margin-top:35px;
+	padding-bottom: 15px;
 }
 #element_2>.bg-light>div>div>.col-lg-8{
-	padding-left: 25px;
+	padding-left: 15px;
 }
 #element_2>.bg-light>div>div>.col-lg-4>img,#element_2>.bg-light>div>.col-lg-4>img{
-	float: right;
 	width:120px;
 	height: 120px;
 }
@@ -94,7 +94,7 @@ header a{
 	font-size: 90%;
 }
 #carousel_1>.carousel-inner{
-	border-radius: 5%;
+	border-radius: 30px 30px 30px 30px;
 }
 #carousel_1>.carousel-inner>.carousel-item{
 	height:275px;
@@ -103,15 +103,72 @@ header a{
 	width:100%;
 	height:100%;
 }
-#element_3{
+#element_2>div>div>div>h2{
+	font-size:180%;
+}
+#element_2>div>div>h2,#element_3>h2{
 	text-align: center;
+	font-size:180%;
+}
+#element_3{
+	text-align: left;
+	margin-top: 15px;
+}
+#element_3>h2{
+	margin-bottom: 15px;
+}
+#element_3>.col-lg-10{
+	background-image: url('../images/light_bg.png');
+    border-radius: 30px 30px 30px 30px;
+    padding: 35px;
+}
+#element_3>.container>div{
+	margin-top:35px;
 }
 #element_3>.container>div>.col-xl-3{
 	border: 1px solid rgb(0, 123, 255);
-	border-radius: 30px;
+	border-radius: 30px 30px 30px 30px;
+	text-align: center;
+	padding: 15px;
 }
-#element_3>.container>div>.col-xl-3{
-	font-size: 120%;
+#element_3>.container>div>.col-xl-3>h6{
+	font-size:120%;
+}
+#element_3>.container>div>#program_1{
+	margin-right:45px;
+}
+#element_3>.container>div>#program_3{
+	margin-left:45px;
+}
+#element_3>.container>div>.col-xl-3:not(.active):before{
+	border-radius: 30px 30px 30px 30px;
+	position: absolute;
+	content: '';
+	width: 0%;
+	height: 100%;
+	background: #4A90E2;
+	top: 0;
+	left: auto;
+	right: 0;
+	z-index: -1;
+	transition: all 700ms ease;
+}
+#element_3>.container>div>.col-xl-3:not(.active):hover{
+	border-radius: 30px;
+	color: white;
+	box-shadow: none;
+}
+#element_3>.container>div>.col-xl-3:not(.active):hover:before{
+	border-radius: 30px 30px 30px 30px;
+	position: absolute;
+	content: '';
+	width: 100%;
+	height: 100%;
+	background: #4A90E2;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: -1;
 }
 #element_3>.container>div>.active{
 	background-color: rgb(0, 123, 255);
@@ -119,10 +176,22 @@ header a{
 #element_3>.container>div>.active>h6{
 	color:#fff;
 }
+#element_3>.container>#set_program_1,#element_3>.container>#set_program_2,#element_3>.container>#set_program_3{
+	margin-top: 35px;
+}
+
+
 #element_4{
 	text-align: center;
 	background-image: url('../images/light_bg.png');
 	padding-bottom: 35px;
+	border-top-left-radius: 30px; 
+	border-top-right-radius: 30px;
+	margin-top:35px;
+	padding-top: 35px;
+}
+#element_4>div{
+	margin-top:15px;
 }
 #element_4>div>h3{
 	text-align: left;
@@ -131,9 +200,16 @@ header a{
 	height:320px;
 }
 footer{
-	height: 175px;
+	padding-top: 25px;
+	height: 100%;
 	background-color: #1E90FF;
 	color:#fff;
-	border-top-left-radius: 3%; 
-	border-top-right-radius: 3%;
+	border-top-left-radius: 30px; 
+	border-top-right-radius: 30px;
+}
+footer>.col-12>.row>.col-8>div>a,footer>.col-12>.row>.col-4>a{
+	color:#fff;
+}
+footer>.col-12>.row>.col-8>div>a:hover,footer>.col-12>.row>.col-4>a:hover{
+	color: #FFA500;
 }

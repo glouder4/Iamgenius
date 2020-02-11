@@ -1,9 +1,1 @@
-@media (max-width: 768px){
-	#element_2>.bg-light>div>div>.col-lg-4>img,#element_2>.bg-light>div>.col-lg-4>img{
-		float: left;
-		margin-left:40%;
-	}
-	#element_1>.fadeInLeft{
-		margin-top:25%;
-	}
-}
+@media (max-width: 768px){#element_2>div>div{text-align:center}#element_3>.container>div>#program_1{margin-right:0;margin-bottom:15px}#element_3>.container>div>#program_3{margin-left:0;margin-top:15px}}@media (min-width: 768px){#element_2>.bg-light>div>div>.col-lg-4>img,#element_2>.bg-light>div>.col-lg-4>img{float:right}}

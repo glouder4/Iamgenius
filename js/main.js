@@ -14,9 +14,20 @@ $( document ).ready(function() {
 			}
 			scrollPrev = scrolled;
 		});
+
+		$('#goUp').click(function(){
+		 	$('html, body').animate({
+		      scrollTop: $('#element_1').offset().top-90
+		    }, 1500);
+		 } )
 	}
 	else{
 		header.removeClass('fixed-top');
+		$('#goUp').click(function(){
+	 	$('html, body').animate({
+	      scrollTop: $('header').offset().top
+	    }, 1500);
+	 } )
 	}
 
 	$('#set_program_1').hide();
@@ -54,5 +65,4 @@ $( document ).ready(function() {
 		$("#"+$('#element_3>div>div>.active')[0].id).removeClass('active');
 		$('#program_4').addClass('active');
 	})
-
 });
